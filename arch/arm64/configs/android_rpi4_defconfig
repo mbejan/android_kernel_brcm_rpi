@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 6.6.58 Kernel Configuration
+# Linux/arm64 6.6.59 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="Android (11368308, +pgo, +bolt, +lto, +mlgo, based on r510928) clang version 18.0.0 (https://android.googlesource.com/toolchain/llvm-project 477610d4d0d988e69dbc3fae4fe86bff3f07f2b5)"
 CONFIG_GCC_VERSION=0
@@ -6422,6 +6422,7 @@ CONFIG_PWM_BRCMSTB=y
 # CONFIG_PWM_CLK is not set
 # CONFIG_PWM_DWC is not set
 # CONFIG_PWM_FSL_FTM is not set
+# CONFIG_PWM_GPIO is not set
 # CONFIG_PWM_PCA9685 is not set
 CONFIG_PWM_RASPBERRYPI_POE=y
 CONFIG_PWM_RP1=y
