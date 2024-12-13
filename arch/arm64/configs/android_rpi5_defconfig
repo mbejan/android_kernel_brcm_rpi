@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 6.6.59 Kernel Configuration
+# Linux/arm64 6.6.60 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="Android (11368308, +pgo, +bolt, +lto, +mlgo, based on r510928) clang version 18.0.0 (https://android.googlesource.com/toolchain/llvm-project 477610d4d0d988e69dbc3fae4fe86bff3f07f2b5)"
 CONFIG_GCC_VERSION=0
@@ -1837,6 +1837,7 @@ CONFIG_NVME_HWMON=y
 # Misc devices
 #
 # CONFIG_BCM2835_SMI is not set
+# CONFIG_RP1_PIO is not set
 # CONFIG_AD525X_DPOT is not set
 # CONFIG_DUMMY_IRQ is not set
 # CONFIG_PHANTOM is not set
@@ -5764,6 +5765,7 @@ CONFIG_MAILBOX=y
 # CONFIG_ALTERA_MBOX is not set
 CONFIG_BCM2835_MBOX=y
 # CONFIG_MAILBOX_TEST is not set
+# CONFIG_MBOX_RP1 is not set
 CONFIG_IOMMU_IOVA=y
 CONFIG_IOMMU_API=y
 CONFIG_IOMMU_SUPPORT=y
