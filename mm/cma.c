@@ -689,3 +689,8 @@ int cma_check_range(u64 *start, u64 *end)
 
 	return cma_for_each_area(check_range, &range);
 }
+
+EXPORT_TRACEPOINT_SYMBOL_GPL(cma_alloc_start);
+EXPORT_TRACEPOINT_SYMBOL_GPL(cma_alloc_busy_retry);
+EXPORT_TRACEPOINT_SYMBOL_GPL(cma_alloc_finish);
+EXPORT_TRACEPOINT_SYMBOL_GPL(cma_release);
