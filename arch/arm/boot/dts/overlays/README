@@ -3704,6 +3704,14 @@ Load:   dtoverlay=piglow
 Params: <None>
 
 
+Name:   pimidi
+Info:   Configures the Blokas Labs Pimidi card
+Load:   dtoverlay=pimidi,<param>=<val>
+Params: sel                     The position used for the sel rotary switch.
+                                Each unit in the stack must be set on a unique
+                                position. If param is omitted, sel=0 is assumed.
+
+
 Name:   pineboards-hat-ai
 Info:   Pineboards Hat Ai! overlay for the Google Coral Edge TPU
 Load:   dtoverlay=pineboards-hat-ai
@@ -4436,6 +4444,14 @@ Params: no_miso                 Don't claim and use the MISO pin (9), freeing
 Name:   spi0-1cs
 Info:   Only use one CS pin for SPI0
 Load:   dtoverlay=spi0-1cs,<param>=<val>
+Params: cs0_pin                 GPIO pin for CS0 (default 8)
+        no_miso                 Don't claim and use the MISO pin (9), freeing
+                                it for other uses.
+
+
+Name:   spi0-1cs-inverted
+Info:   Only use one CS pin for SPI0 and set to active-high
+Load:   dtoverlay=spi0-1cs-inverted,<param>=<val>
 Params: cs0_pin                 GPIO pin for CS0 (default 8)
         no_miso                 Don't claim and use the MISO pin (9), freeing
                                 it for other uses.
@@ -5244,6 +5260,7 @@ Params: sizex                   Touchscreen size x (default 720)
         invy                    Touchscreen inverted y axis
         swapxy                  Touchscreen swapped x y axis
         disable_touch           Disables the touch screen overlay driver
+        rotation                Display rotation {0,90,180,270} (default 0)
         dsi0                    Use DSI0 and i2c_csi_dsi0 (rather than
                                 the default DSI1 and i2c_csi_dsi).
 
